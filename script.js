@@ -7,7 +7,6 @@ function addListeners() {
 
   const megaForm = document.querySelector('.mega-form')
   megaForm && megaForm.addEventListener('change', baz)
-
 } 
 
 function foo(event) {
