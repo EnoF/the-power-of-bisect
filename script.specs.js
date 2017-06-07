@@ -1,7 +1,7 @@
 const expect = chai.expect
 
-describe('let us have a more descriptive message', function() {
-  it('shall we?', function() {
+describe('nope, we need more clutter', function() {
+  it('for demonstration purpose', function() {
     expect(true).to.equal(true)
   })
 })

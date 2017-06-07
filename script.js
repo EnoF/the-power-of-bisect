@@ -7,6 +7,9 @@ function addListeners() {
 
   const megaForm = document.querySelector('.mega-form')
   megaForm && megaForm.addEventListener('change', baz)
+
+  const input = document.querySelector('input')
+  input && input.addEventListener('input', hoo)
 } 
 
 function foo(event) {
@@ -19,6 +22,13 @@ function bar(event) {
 
 function baz(event) {
   event.target.classList.add('filled')
+}
+
+function hoo(event) {
+  event.target.classList.add('flash')
+  setTimeout(function() {
+    event.target.classList.remove('flash')
+  }, 100)
 }
 
 addListeners()
