@@ -30,5 +30,20 @@ function hoo(event) {
     event.target.classList.remove('flash')
   }, 100)
 }
+<<<<<<< HEAD
 
 addListeners()
+||||||| parent of 4c11f9e... select now also gets a border
+=======
+
+const select = document.querySelector('select')
+
+select && select.addEventListener('change', nar)
+
+function nar(event) {
+  event.target.classList.add('flash')
+  setTimeout(function() {
+    event.target.classList.remove('flash')
+  })
+}
+>>>>>>> 4c11f9e... select now also gets a border
