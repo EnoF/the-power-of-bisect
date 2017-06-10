@@ -10,6 +10,9 @@ function addListeners() {
 
   const input = document.querySelector('input')
   input && input.addEventListener('input', hoo)
+
+  const select = document.querySelector('select')
+  select && select.addEventListener('change', nar)
 } 
 
 function foo(event) {
@@ -30,15 +33,6 @@ function hoo(event) {
     event.target.classList.remove('flash')
   }, 100)
 }
-<<<<<<< HEAD
-
-addListeners()
-||||||| parent of 4c11f9e... select now also gets a border
-=======
-
-const select = document.querySelector('select')
-
-select && select.addEventListener('change', nar)
 
 function nar(event) {
   event.target.classList.add('flash')
@@ -46,4 +40,5 @@ function nar(event) {
     event.target.classList.remove('flash')
   })
 }
->>>>>>> 4c11f9e... select now also gets a border
+
+addListeners()
