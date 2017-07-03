@@ -9,7 +9,7 @@ function addListeners() {
   megaForm && megaForm.addEventListener('change', baz)
 
   const input = document.querySelector('input')
-  input && input.addEventListener('input', hoo)
+  input && input.addEventListener('change', hoo)
 
   const select = document.querySelector('select')
   select && select.addEventListener('change', nar)
