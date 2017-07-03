@@ -32,6 +32,7 @@ function hoo(event) {
   setTimeout(function() {
     event.target.classList.remove('flash')
   }, 100)
+  event.stopImmediatePropagation()
 }
 
 function nar(event) {
