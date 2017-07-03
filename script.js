@@ -10,6 +10,9 @@ function addListeners() {
 
   const input = document.querySelector('input')
   input && input.addEventListener('input', hoo)
+
+  const select = document.querySelector('select')
+  select && select.addEventListener('change', nar)
 } 
 
 function foo(event) {
@@ -29,6 +32,13 @@ function hoo(event) {
   setTimeout(function() {
     event.target.classList.remove('flash')
   }, 100)
+}
+
+function nar(event) {
+  event.target.classList.add('flash')
+  setTimeout(function() {
+    event.target.classList.remove('flash')
+  })
 }
 
 addListeners()
