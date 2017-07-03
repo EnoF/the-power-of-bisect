@@ -22,3 +22,20 @@ describe('on change fill the input color', function() {
   })
 }
 ```
+
+This test can be added to a new file: `bisect.specs.js`
+
+We can add a new karma config to only run this new file:
+
+```
+module.exports = config => {
+  config.set({
+    frameworks: ['mocha', 'sinon-chai'],
+    files: ['script.js', 'bisect.specs.js'],
+    browsers: ['PhantomJS'],
+    reporters: ['progress'],
+    plugins: ['karma-phantomjs-launcher', 'karma-mocha', 'karma-sinon-chai'],
+    singleRun: true
+  })
+}
+```
