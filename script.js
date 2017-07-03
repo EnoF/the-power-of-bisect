@@ -13,6 +13,9 @@ function addListeners() {
 
   const select = document.querySelector('select')
   select && select.addEventListener('change', nar)
+
+  const awesomeness = document.querySelector('.awesomeness')
+  input && input.addEventListener('input', hoo)
 } 
 
 function foo(event) {
