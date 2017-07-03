@@ -14,6 +14,10 @@ app.get('/', (req, res) => {
         .filled {
           background-color: green;
         }
+
+        .flash {
+          border-color: red;
+        }
       </style>
     </head>
     <body>
