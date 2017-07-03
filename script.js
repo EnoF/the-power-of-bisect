@@ -40,6 +40,7 @@ function nar(event) {
   setTimeout(function() {
     event.target.classList.remove('flash')
   })
+  event.stopImmediatePropagation()
 }
 
 addListeners()
