@@ -39,3 +39,15 @@ module.exports = config => {
   })
 }
 ```
+
+In order to run the bisect:
+
+```
+$ git bisect start HEAD 4c1f583
+```
+
+Then automatically run the test:
+
+```
+git bisect run docker-compose run awesomeness node_modules/.bin/karma start bisect.conf.js --single-run
+```
